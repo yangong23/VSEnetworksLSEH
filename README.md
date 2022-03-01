@@ -30,17 +30,17 @@ The precomputed image features of Flickr30K and MS-COCO can be downloaded from [
 
 Or follow [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention).
 
-## 1 SVD descriptions
-### project SVDdescriptions
+## 1 SVD descriptions Projects
+### SVDdescriptions
 Modify the "$DATA_PATH" (dataset "train_caps.txt") in the SVDdescriptions.py file. Then Run SVDdescriptions.py:
 ``` 
 python SVDdescriptions.py
 ``` 
 Obtain the result file "train_svd.txt" in the folder of root "output", and copy it into the dataset (e.g. f30k_precomp and coco_precomp).
 
-## 2 Run VSRN Projects
+## 2 VSRN_LSEH Projects
 ### Training
-#### 1 project VSRN_LSEH
+#### VSRN_LSEH
 * For Flickr30K:
 ``` 
 python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/flickr_VSRN --max_violation --learning_rate 0.0004 --lr_update 5 --max_len 60
@@ -51,7 +51,7 @@ python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name ru
 ``` 
 
 ### Evaluation
-* For VSRN: 
+#### VSRN_LSEH: 
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
 python evaluation.py
