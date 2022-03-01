@@ -35,7 +35,7 @@ Or follow [bottom-up-attention](https://github.com/peteanderson80/bottom-up-atte
 
 ## 1 SVD descriptions Project
 ### SVDdescriptions
-Modify the "$DATA_PATH" (dataset "train_caps.txt") and run below. See the result file "train_svd.txt" in the root folder "output"
+Modify "$DATA_PATH" (dataset "train_caps.txt") and run below. See the result file "train_svd.txt" in the root folder "output"
 ``` 
 python SVDdescriptions.py --data_path $DATA_PATH
 ``` 
