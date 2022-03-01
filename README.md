@@ -9,11 +9,11 @@ We recommended the following dependencies.
 
 * [PyTorch](https://pytorch.org/) (1.7.1)
 
-* [NumPy](https://numpy.org/) (>1.12.1)
+* [NumPy](https://numpy.org/) (>=1.12.1)
 
-* [Pandas](https://pandas.pydata.org/) (>1.2.3)
+* [Pandas](https://pandas.pydata.org/) (>=1.2.3)
 
-* [scikit-learn](https://scikit-learn.org/stable/) (>0.24.1)
+* [scikit-learn](https://scikit-learn.org/stable/) (>=0.24.1)
 
 * [TensorBoard](https://github.com/TeamHG-Memex/tensorboard_logger) 
 
