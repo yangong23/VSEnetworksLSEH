@@ -13,6 +13,8 @@ We recommended the following dependencies.
 
 * [Pandas](https://pandas.pydata.org/) (>1.2.3)
 
+* [scikit-learn](https://scikit-learn.org/stable/) (>0.24.1)
+
 * [TensorBoard](https://github.com/TeamHG-Memex/tensorboard_logger) 
 
 * [pycocotools](https://github.com/cocodataset/cocoapi) 
