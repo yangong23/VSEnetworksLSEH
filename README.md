@@ -26,7 +26,7 @@ import nltk
 nltk.download()
 > d punkt
 ``` 
-We used [anaconda](https://www.anaconda.com/) to manage the dependencies, and the code was runing on a NVIDIA RTX 3080 GPU.
+We used [anaconda](https://www.anaconda.com/) to manage the dependencies, and the code was runing on a NVIDIA TITAN or RTX 3080 GPU.
 
 ## Download data
 The precomputed image features of Flickr30K and MS-COCO can be downloaded from [VSRN](https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC).
