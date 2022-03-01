@@ -4,6 +4,7 @@
 # Reference: Efficient Learning: Semantically Enhanced Hard Negatives for Visual Semantic Embeddings.
 # -----------------------------------------------------------------
 
+import os
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
@@ -59,14 +60,17 @@ def loading_data_and_preprocessing(Source_dir='.'):
     return X
 
 def main():
-    source_dir = '/home/lunet/coyg4/data/coco/coco_precomp/train_caps.txt'
-    output_dir = './output/'
+    source_dir = '$DATA_PATH/train_caps.txt'
     NumSV = 400 #number of singular value
 
     X = loading_data_and_preprocessing(Source_dir=source_dir)
     print('SVD processing')
     svd_model = TruncatedSVD(n_components=NumSV, algorithm='randomized', n_iter=100, random_state=122)
     lsa = svd_model.fit_transform(X)
+
+    output_dir = './output/'
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
     # save description vectors
     np.savetxt(output_dir + 'train_svd.txt', lsa, fmt='%s', delimiter=',')
