@@ -36,7 +36,7 @@ Modify the "$DATA_PATH" (dataset "train_caps.txt") in the SVDdescriptions.py fil
 ``` 
 python SVDdescriptions.py
 ``` 
-Obtain the result file "train_svd.txt" in the root folder of "output", and copy it into the dataset (e.g. f30k_precomp and coco_precomp).
+Obtain the result file "train_svd.txt" in the folder of root "output", and copy it into the dataset (e.g. f30k_precomp and coco_precomp).
 
 ## 2 Run VSRN Projects
 ### Training
