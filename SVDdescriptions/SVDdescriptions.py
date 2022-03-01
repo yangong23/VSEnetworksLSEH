@@ -12,6 +12,7 @@ from sklearn.decomposition import TruncatedSVD
 import numpy as np
 from nltk.stem.porter import *
 from nltk.corpus import stopwords
+import argparse
 
 # loading data and preprocessing
 def loading_data_and_preprocessing(Source_dir='.'):
@@ -59,8 +60,8 @@ def loading_data_and_preprocessing(Source_dir='.'):
 
     return X
 
-def main():
-    source_dir = '$DATA_PATH/train_caps.txt'
+def main(opt):
+    source_dir = opt.data_path
     NumSV = 400 #number of singular value
 
     X = loading_data_and_preprocessing(Source_dir=source_dir)
@@ -76,5 +77,12 @@ def main():
     np.savetxt(output_dir + 'train_svd.txt', lsa, fmt='%s', delimiter=',')
 
 if __name__ == '__main__':
+    # Hyper Parameters
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_path', default='/home/yan/f30k_precomp/train_caps.txt',
+                        help='path to datasets')
 
-    main()
+    opt = parser.parse_args()
+    print(opt)
+
+    main(opt)
