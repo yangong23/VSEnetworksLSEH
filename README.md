@@ -32,7 +32,7 @@ Or follow [bottom-up-attention](https://github.com/peteanderson80/bottom-up-atte
 
 ## 1 SVD descriptions
 ### project SVDdescriptions
-Modify the "$DATA_PATH" of dataset "train_caps.txt" file in the SVDdescriptions.py file. Then Run SVDdescriptions.py:
+Modify the "$DATA_PATH" (dataset "train_caps.txt") in the SVDdescriptions.py file. Then Run SVDdescriptions.py:
 ``` 
 python SVDdescriptions.py
 ``` 
