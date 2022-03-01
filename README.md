@@ -37,7 +37,7 @@ Or follow [bottom-up-attention](https://github.com/peteanderson80/bottom-up-atte
 ### SVDdescriptions
 Modify the "$DATA_PATH" (dataset "train_caps.txt") in the SVDdescriptions.py file. Then Run SVDdescriptions.py:
 ``` 
-python SVDdescriptions.py
+python SVDdescriptions.py --data_path $DATA_PATH
 ``` 
 Or directly download from [our data](https://drive.google.com/drive/folders/1wXY4nOqopy4H_9Rb6RByjCrK81WQ5Fnl).
 
