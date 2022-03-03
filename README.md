@@ -52,7 +52,7 @@ python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name ru
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/flickr_VSRN --max_violation --learning_rate 0.0004 --lr_update 6 --max_len 60
+python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco_VSRN --max_violation --learning_rate 0.0004 --lr_update 6 --max_len 60
 ``` 
 
 ### Evaluation
