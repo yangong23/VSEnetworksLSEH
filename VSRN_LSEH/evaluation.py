@@ -20,8 +20,8 @@ from collections import OrderedDict
 # from evaluation import evalrank
 
 def main():
-    evalrank("/home/lunet/coyg4/multimodal/VSRN/VSRN_LSEH/runs/coco_VSRN/model_best.pth.tar",
-             data_path="/home/lunet/coyg4/data/coco",
+    evalrank("/home/yan/VSRN/VSRN_LSEH/runs/coco_VSRN/model_best.pth.tar",
+             data_path="/home/yan/data/coco",
              split="testall", fold5=False)
 
 
