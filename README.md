@@ -61,3 +61,22 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 ``` 
 python evaluation.py
 ``` 
+
+## 2 VSEinfty_LSEH Projects
+### Training
+#### VSEinfty_LSEH
+* For Flickr30K:
+``` 
+python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/f30k --model_name runs/f30k --learning_rate 0.0008 --lr_update 10
+``` 
+* For MS-COCO:
+``` 
+python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco --model_name runs/coco --learning_rate 0.0008 --lr_update 10
+``` 
+
+### Evaluation
+#### VSEinfty_LSEH: 
+Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run eval.py:
+``` 
+python eval.py
+``` 
