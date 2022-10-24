@@ -45,7 +45,6 @@ Put "train_svd.txt" into the dataset (e.g. f30k_precomp and coco_precomp).
 
 ## 2 VSRN_LSEH Project
 ### Training
-#### VSRN_LSEH
 * For Flickr30K:
 ``` 
 python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/flickr_VSRN --max_violation --learning_rate 0.0004 --lr_update 5 --max_len 60
@@ -56,7 +55,6 @@ python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name ru
 ``` 
 
 ### Evaluation
-#### VSRN_LSEH: 
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
 python evaluation.py
@@ -64,7 +62,6 @@ python evaluation.py
 
 ## 3 VSEinfty_LSEH Project
 ### Training
-#### VSEinfty_LSEH
 * For Flickr30K:
 ``` 
 python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/f30k --model_name runs/f30k --learning_rate 0.0008 --lr_update 10
@@ -75,14 +72,12 @@ python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name ru
 ``` 
 
 ### Evaluation
-#### VSEinfty_LSEH: 
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run eval.py:
 ``` 
 python eval.py
 ``` 
-## 3 SGRAF Project
+## 3 SGRAF_LSEH Project
 ### Training
-#### SGRAF_LSEH
 * For Flickr30K:
 ``` 
 (For SGR) python train.py --data_name f30k_precomp --num_epochs 40 --lr_update 30 --module_name SGR
@@ -95,12 +90,43 @@ python eval.py
 ``` 
 
 ### Evaluation
-#### SGRAF_LSEH: 
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
 python evaluation.py
 ``` 
 
+## 4 VSEpp_LSEH Project
+### Training
+* For Flickr30K:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --logger_name runs/f30k_vse++ --max_violation
+``` 
+* For MS-COCO:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name coco_precomp --logger_name runs/coco_vse++ --max_violation
+``` 
 
+### Evaluation
+Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
+``` 
+python evaluation.py
+``` 
+
+## 2 GSMN_LSEH Project
+### Training
+* For Flickr30K:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
+``` 
+* For MS-COCO:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
+``` 
+
+### Evaluation
+Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
+``` 
+python test.py
+``` 
 
 
