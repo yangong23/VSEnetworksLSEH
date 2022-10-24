@@ -80,3 +80,27 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 ``` 
 python eval.py
 ``` 
+## 3 SGRAF Project
+### Training
+#### SGRAF_LSEH
+* For Flickr30K:
+``` 
+(For SGR) python train.py --data_name f30k_precomp --num_epochs 40 --lr_update 30 --module_name SGR
+(For SAF) python train.py --data_name f30k_precomp --num_epochs 30 --lr_update 20 --module_name SAF
+```
+* For MS-COCO:
+``` 
+(For SGR) python train.py --data_name coco_precomp --num_epochs 20 --lr_update 10 --module_name SGR
+(For SAF) python train.py --data_name coco_precomp --num_epochs 20 --lr_update 10 --module_name SAF
+``` 
+
+### Evaluation
+#### SGRAF_LSEH: 
+Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
+``` 
+python evaluation.py
+``` 
+
+
+
+
