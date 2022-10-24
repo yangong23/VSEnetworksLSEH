@@ -43,7 +43,7 @@ Or directly download from [our data](https://drive.google.com/drive/folders/1wXY
 
 Put "train_svd.txt" into the dataset (e.g. f30k_precomp and coco_precomp).
 
-## 2 VSRN_LSEH Projects
+## 2 VSRN_LSEH Project
 ### Training
 #### VSRN_LSEH
 * For Flickr30K:
@@ -62,7 +62,7 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 python evaluation.py
 ``` 
 
-## 3 VSEinfty_LSEH Projects
+## 3 VSEinfty_LSEH Project
 ### Training
 #### VSEinfty_LSEH
 * For Flickr30K:
