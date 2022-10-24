@@ -112,7 +112,7 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 python evaluation.py
 ``` 
 
-## 2 GSMN_LSEH Project
+## 5 GSMN_LSEH Project
 ### Training
 * For Flickr30K:
 ``` 
