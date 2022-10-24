@@ -31,8 +31,6 @@ We used [anaconda](https://www.anaconda.com/) to manage the dependencies, and th
 ## Download data
 The precomputed image features of Flickr30K and MS-COCO can be downloaded from [VSRN](https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC), and GSMN needs additional files which can be found at [GSMN](https://github.com/CrossmodalGroup/GSMN).
 
-Or follow [bottom-up-attention](https://github.com/peteanderson80/bottom-up-attention).
-
 ## 1 SVD descriptions Project
 ### SVDdescriptions
 Modify "$DATA_PATH" of dataset file "train_caps.txt" and run below. See the result file "train_svd.txt" in the root folder "output"
