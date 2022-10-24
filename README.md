@@ -71,7 +71,7 @@ python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name ru
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco --model_name runs/coco --learning_rate 0.0008 --lr_update 10
+python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco --model_name runs/coco --learning_rate 0.001 --lr_update 10
 ``` 
 
 ### Evaluation
