@@ -1,11 +1,3 @@
-"""
-# Pytorch implementation for AAAI2021 paper from
-# https://arxiv.org/pdf/2101.01368.
-# "Similarity Reasoning and Filtration for Image-Text Matching"
-# Haiwen Diao, Ying Zhang, Lin Ma, Huchuan Lu
-#
-# Writen by Haiwen Diao, 2020
-"""
 
 import os
 import time
