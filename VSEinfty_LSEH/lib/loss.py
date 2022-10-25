@@ -85,7 +85,7 @@ class ContrastiveLossLSEH(nn.Module):
         self.max_violation = False
         print('Use VSE0 objective.')
 
-    def forward(self, im, s, ids, img_ids, lsa):
+    def forward(self, im, s, ids, img_ids, svd):
         # compute image-sentence score matrix
         scores = get_sim(im, s)
         diagonal = scores.diag().view(im.size(0), 1)
@@ -93,7 +93,7 @@ class ContrastiveLossLSEH(nn.Module):
         d2 = diagonal.t().expand_as(scores)
 
         if torch.cuda.is_available():
-            lsa = lsa.cuda()
+            svd = svd.cuda()
 
         ids = np.array(ids)
         img_ids = np.array(img_ids)
@@ -111,25 +111,24 @@ class ContrastiveLossLSEH(nn.Module):
 
         lm = 0.025
         al = self.margin
-        siml = self.torchsim(lsa, lsa)
-        scoresLsa = siml
-        scoresLsa = scoresLsa * lm
-        LsaMargin = scoresLsa + al
-        LsaMargin = LsaMargin * map
+        SeScores = self.torchsim(svd, svd)
+        SeScores = SeScores * lm
+        SeMargin = SeScores + al
+        SeMargin = SeMargin * map
 
         # clear diagonals
         maskL = torch.eye(LsaMargin.size(0)) > .5
         IL = Variable(maskL)
         if torch.cuda.is_available():
             IL = IL.cuda()
-        LsaMargin = LsaMargin.masked_fill_(IL, 0)
+        SeMargin = SeMargin.masked_fill_(IL, 0)
 
         # compare every diagonal score to scores in its column
         # caption retrieval
-        cost_s = (LsaMargin + scores - d1).clamp(min=0)
+        cost_s = (SeMargin + scores - d1).clamp(min=0)
         # compare every diagonal score to scores in its row
         # image retrieval
-        cost_im = (LsaMargin + scores - d2).clamp(min=0)
+        cost_im = (SeMargin + scores - d2).clamp(min=0)
 
         # clear diagonals
         mask = torch.eye(scores.size(0)) > .5
