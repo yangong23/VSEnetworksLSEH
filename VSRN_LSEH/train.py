@@ -129,7 +129,7 @@ def main():
         help='max length of captions(containing <sos>,<eos>)')
 
     opt = parser.parse_args()
-    print(opt)
+    print(opt)     
 
     logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
     tb_logger.configure(opt.logger_name, flush_secs=5)
