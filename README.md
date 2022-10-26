@@ -32,7 +32,7 @@ We used [anaconda](https://www.anaconda.com/) to manage the dependencies, and th
 The precomputed image features of Flickr30K and MS-COCO can be downloaded from [VSRN](https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC), and GSMN needs additional files which can be found at [GSMN](https://github.com/CrossmodalGroup/GSMN). The dataset of IAPR TC-12 can be downloaded from [IAPR TC-12](https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC).
 
 ## Benchmark Methods
-Projects with LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project with LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss). Projects with our LSEH are as follows.
+Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project using LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss). Projects using our LSEH are as follows.
 
 ## 1 SVD Descriptions for Datasets
 ### SVDdescriptions
