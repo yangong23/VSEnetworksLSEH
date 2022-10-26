@@ -140,10 +140,6 @@ python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "
 ``` 
 python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
 ``` 
-* For IAPR TC-12:
-``` 
-python train.py --data_path "$DATA_PATH" --data_name IAPRTC_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
-``` 
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
