@@ -69,15 +69,15 @@ python evaluation.py
 ### Training
 * For Flickr30K:
 ``` 
-python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/f30k --model_name runs/f30k --learning_rate 0.0008 --lr_update 10
+python train.py --data_path $DATA_PATH --data_name f30k --logger_name runs/f30k --model_name runs/f30k --learning_rate 0.0008 --lr_update 10
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco --model_name runs/coco --learning_rate 0.001 --lr_update 10
+python train.py --data_path $DATA_PATH --data_name coco --logger_name runs/coco --model_name runs/coco --learning_rate 0.001 --lr_update 10
 ``` 
 * For IAPR TC-12:
 ``` 
-python train.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR --model_name runs/IAPR
+python IAPRTC12/trainIAPRTC12.py --data_path $DATA_PATH --data_name iaprtc12 --logger_name runs/IAPR --model_name runs/IAPR
 ``` 
 
 ### Evaluation
