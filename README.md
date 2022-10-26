@@ -54,6 +54,10 @@ python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name ru
 ``` 
 python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco_VSRN --max_violation --learning_rate 0.0004 --lr_update 6 --max_len 60
 ``` 
+* For IAPR TC-12:
+``` 
+python train.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR_VSRN --max_violation --max_len 60
+```
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
@@ -70,6 +74,10 @@ python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name ru
 * For MS-COCO:
 ``` 
 python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco --model_name runs/coco --learning_rate 0.001 --lr_update 10
+``` 
+* For IAPR TC-12:
+``` 
+python train.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR --model_name runs/IAPR
 ``` 
 
 ### Evaluation
@@ -89,6 +97,11 @@ python eval.py
 (For SGR) python train.py --data_name coco_precomp --num_epochs 20 --lr_update 10 --module_name SGR
 (For SAF) python train.py --data_name coco_precomp --num_epochs 20 --lr_update 10 --module_name SAF
 ``` 
+* For IAPR TC-12:
+``` 
+(For SGR) python train.py --data_name IAPRTC_precomp --module_name SGR
+(For SAF) python train.py --data_name IAPRTC_precomp --module_name SAF
+```
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
@@ -106,6 +119,10 @@ python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --logger_name 
 ``` 
 python train.py --data_path "$DATA_PATH" --data_name coco_precomp --logger_name runs/coco_vse++ --max_violation
 ``` 
+* For IAPR TC-12:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name IAPRTC_precomp --logger_name runs/IAPRTC_vse++ --max_violation
+``` 
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
@@ -122,6 +139,10 @@ python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "
 * For MS-COCO:
 ``` 
 python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
+``` 
+* For IAPR TC-12:
+``` 
+python train.py --data_path "$DATA_PATH" --data_name IAPRTC_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
 ``` 
 
 ### Evaluation
