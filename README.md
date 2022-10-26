@@ -83,7 +83,7 @@ python IAPRTC12/trainIAPRTC12.py --data_path $DATA_PATH --data_name iaprtc12 --l
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run eval.py:
 ``` 
-python eval.py
+python eval.py/evalIAPRTC12.py
 ``` 
 ## 4 SGRAF_LSEH
 ### Training
