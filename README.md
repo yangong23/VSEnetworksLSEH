@@ -53,13 +53,13 @@ python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name ru
 ``` 
 * For IAPR TC-12:
 ``` 
-python train.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR_VSRN --max_violation --max_len 60
+python IAPRTC12/trainIAPRTC12.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR_VSRN --max_violation --max_len 60
 ```
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
-python evaluation.py
+python evaluation.py/evaluationIAPRTC12.py
 ``` 
 
 ## 3 VSEinfty_LSEH
@@ -96,14 +96,14 @@ python eval.py/evalIAPRTC12.py
 ``` 
 * For IAPR TC-12:
 ``` 
-(For SGR) python train.py --data_name IAPRTC_precomp --module_name SGR
-(For SAF) python train.py --data_name IAPRTC_precomp --module_name SAF
+(For SGR) python IAPRTC12/trainIAPRTC12.py --data_name IAPRTC_precomp --module_name SGR
+(For SAF) python IAPRTC12/trainIAPRTC12.py --data_name IAPRTC_precomp --module_name SAF
 ```
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
-python evaluation.py
+python evaluation.py/evaluationIAPRTC12.py
 ``` 
 
 ## 5 VSEpp_LSEH
@@ -118,13 +118,13 @@ python train.py --data_path "$DATA_PATH" --data_name coco_precomp --logger_name 
 ``` 
 * For IAPR TC-12:
 ``` 
-python train.py --data_path "$DATA_PATH" --data_name IAPRTC_precomp --logger_name runs/IAPRTC_vse++ --max_violation
+python IAPRTC12/trainIAPRTC12.py --data_path "$DATA_PATH" --data_name IAPRTC_precomp --logger_name runs/IAPRTC_vse++ --max_violation
 ``` 
 
 ### Evaluation
 Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
 ``` 
-python evaluation.py
+python evaluation.py/evaluationIAPRTC12.py
 ``` 
 
 ## 6 GSMN_LSEH
@@ -146,5 +146,6 @@ python test.py
 
 ## Benchmark LMH and LUWM
 Comment ContrastiveLossLSEH and uncomment ContrastiveLoss in each project. Or follow the offical repositories as follows.
-Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project using LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss). Projects using our LSEH are as follows.
+
+Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project using LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss).
 
