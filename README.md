@@ -144,8 +144,8 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 python test.py
 ``` 
 
-## Benchmark LMH and LUWM
-Comment "ContrastiveLossLSEH" and uncomment "ContrastiveLoss" in each project. Or follow the offical repositories as follows:
+## LMH and LUWM
+Comment "ContrastiveLossLSEH" and uncomment "ContrastiveLoss" in the model file of each project. Or follow the offical repositories as follows:
 
 Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project using LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss).
 
