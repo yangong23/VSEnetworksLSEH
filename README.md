@@ -131,11 +131,11 @@ python evaluation.py/evaluationIAPRTC12.py
 ### Training
 * For Flickr30K:
 ``` 
-python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
+python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 20 --embed_size 1024 --is_sparse
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --model_name "$MODEL_PATH" --bi_gru
+python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 20 --embed_size 1024 --is_sparse
 ``` 
 
 ### Evaluation
