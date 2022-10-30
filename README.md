@@ -33,13 +33,13 @@ The datasets of Flickr30K and MS-COCO can be downloaded from [here](https://driv
 
 ## 1 SVD Descriptions for Datasets
 ### SVDdescriptions
-Modify "$DATA_PATH" of dataset file "train_caps.txt" and run below. See the result file "train_svd.txt" in the root folder "output"
+Modify "$DATA_PATH" in file "train_caps.txt" and run below.
 ``` 
 python SVDdescriptions.py --data_path $DATA_PATH
 ``` 
 Or directly download from [our data](https://drive.google.com/drive/folders/1wXY4nOqopy4H_9Rb6RByjCrK81WQ5Fnl).
 
-Put "train_svd.txt" into the dataset (e.g. f30k_precomp and coco_precomp).
+See the result file "train_svd.txt" in the root folder "output". Copy "train_svd.txt" into the dataset (e.g. f30k_precomp and coco_precomp).
 
 ## 2 VSRN_LSEH
 ### Training
