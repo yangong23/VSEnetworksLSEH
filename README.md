@@ -135,7 +135,7 @@ python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 20 --embed_size 1024 --is_sparse
+python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 10 --embed_size 1024 --is_sparse
 ``` 
 
 ### Evaluation
