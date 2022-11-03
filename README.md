@@ -1,5 +1,5 @@
 # VSEnetworksLSEH
-This is the PyTorch code for using LSEH of VSE networks, which is described in the paper " Semantically Enhanced Hard Negatives for Cross-Modal Information Retrieval".
+This is the PyTorch code for using LSEH of VSE networks, which is described in the paper " Improving Visual-Semantic Embeddings by Learning Semantically-Enhanced Hard Negatives for Cross-modal Information Retrieval".
 
 ## Requirements and installation
 We recommended the following dependencies.
