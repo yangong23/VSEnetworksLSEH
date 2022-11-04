@@ -45,15 +45,15 @@ See the result file "train_svd.txt" in the root folder "output". Copy "train_svd
 ### Training
 * For Flickr30K:
 ``` 
-python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/flickr_VSRN --max_violation --learning_rate 0.0004 --lr_update 5 --max_len 60
+python train.py --data_path $DATA_PATH --data_name f30k_precomp --logger_name runs/flickr_VSRN --learning_rate 0.0004 --lr_update 5 --max_violation --max_len 60
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco_VSRN --max_violation --learning_rate 0.0004 --lr_update 6 --max_len 60
+python train.py --data_path $DATA_PATH --data_name coco_precomp --logger_name runs/coco_VSRN --learning_rate 0.0004 --lr_update 6 --max_violation --max_len 60
 ``` 
 * For IAPR TC-12:
 ``` 
-python IAPRTC12/trainIAPRTC12.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR_VSRN --max_violation --max_len 60
+python IAPRTC12/trainIAPRTC12.py --data_path $DATA_PATH --data_name IAPRTC12_precomp --logger_name runs/IAPR_VSRN --learning_rate 0.0005 --lr_update 20 --max_violation --max_len 60
 ```
 
 ### Evaluation
@@ -70,7 +70,7 @@ python train.py --data_path $DATA_PATH --data_name f30k --logger_name runs/f30k 
 ``` 
 * For MS-COCO:
 ``` 
-python train.py --data_path $DATA_PATH --data_name coco --logger_name runs/coco --model_name runs/coco --learning_rate 0.001 --lr_update 10
+python train.py --data_path $DATA_PATH --data_name coco --logger_name runs/coco --model_name runs/coco --learning_rate 0.0008 --lr_update 10
 ``` 
 * For IAPR TC-12:
 ``` 
