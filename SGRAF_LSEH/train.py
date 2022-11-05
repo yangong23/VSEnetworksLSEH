@@ -20,17 +20,8 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 
-
-def set_seed(seed):
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    numpy.random.seed(seed)
-    random.seed(seed)
-    torch.backends.cudnn.deterministic = True
-
-
 def main():
-    set_seed(6)
+
     opt = opts.parse_opt()
     logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
     tb_logger.configure(opt.logger_name, flush_secs=5)
