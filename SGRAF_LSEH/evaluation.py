@@ -298,5 +298,5 @@ def t2i(images, captions, caplens, sims, npts=None, return_ranks=False):
 
 
 if __name__ == '__main__':
-    evalrank("/media/data/LSEH_Semantically_Enhanced_HD/SGRAF-main/prtrainedModels/SAF/F30K_SAF/use/SAF_benchmark_lr0002_lu20_e30/model_best.pth.tar",
-             data_path="/media/data/data", split="test", fold5=False)
+    evalrank("./runs/F30K_SAF/model_best.pth.tar",
+             data_path="./data", split="test", fold5=False)
