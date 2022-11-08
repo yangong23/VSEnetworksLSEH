@@ -26,7 +26,7 @@ import nltk
 nltk.download()
 > d punkt
 ``` 
-We used [anaconda](https://www.anaconda.com/) to manage the dependencies, and the code was runing on a NVIDIA TITAN or RTX 3080 GPU.
+We used [anaconda](https://www.anaconda.com/) to manage the dependencies.
 
 ## Download data
 The datasets of Flickr30K and MS-COCO can be downloaded from [here](https://drive.google.com/drive/u/0/folders/1os1Kr7HeTbh8FajBNegW8rjJf6GIhFqC) or follow [VSRN](https://github.com/KunpengLi1994/VSRN). GSMN needs additional files which can be found at [GSMN](https://github.com/CrossmodalGroup/GSMN). The dataset of IAPR TC-12 can be downloaded from [here](https://drive.google.com/drive/folders/1wXY4nOqopy4H_9Rb6RByjCrK81WQ5Fnl). For VSEinfty_LSEH project change the folder names of all datasets as 'precomp', for other projects change the folder names of the datasets as 'f30k_precomp', 'coco_precomp', and 'iaprtc12_precomp' respectively.
