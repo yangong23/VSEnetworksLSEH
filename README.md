@@ -127,25 +127,8 @@ Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run ev
 python evaluation.py/evaluationIAPRTC12.py
 ``` 
 
-## 6 GSMN_LSEH
-### Training
-* For Flickr30K:
-``` 
-python train.py --data_path "$DATA_PATH" --data_name f30k_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 20 --embed_size 1024 --is_sparse
-``` 
-* For MS-COCO:
-``` 
-python train.py --data_path "$DATA_PATH" --data_name coco_precomp --vocab_path "$VOCAB_PATH" --logger_name runs/log --bi_gru --max_violation --lambda_softmax 10 --embed_size 1024 --is_sparse
-``` 
-
-### Evaluation
-Modify the "$MODEL_PATH" and "$DATA_PATH" in the evaluation.py file. Then Run evaluation.py:
-``` 
-python test.py
-``` 
-
-## LMH and LUWM
+## LMH
 Comment "ContrastiveLossLSEH" and uncomment "ContrastiveLoss" in the model file of each project. Or follow the offical repositories as follows:
 
-Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp), and [GSMN](https://github.com/CrossmodalGroup/GSMN). Project using LUWM follows [PolyLoss](https://github.com/wayne980/PolyLoss).
+Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp).
 
