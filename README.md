@@ -132,3 +132,16 @@ Comment "ContrastiveLossLSEH" and uncomment "ContrastiveLoss" in the model file 
 
 Projects using LMH follow [VSRN](https://pytorch.org/), [VSE∞](https://github.com/woodfrog/vse_infty), [SGRAF](https://github.com/Paranioar/SGRAF), [VSE++](https://github.com/fartashf/vsepp).
 
+# Citation
+If you find this code useful for your research, please consider citing:
+``` 
+@article{gong2022improving,
+  title={Improving Visual-Semantic Embeddings by Learning Semantically-Enhanced Hard Negatives for Cross-modal Information Retrieval},
+  author={Gong, Yan and Cosma, Georgina},
+  journal={Pattern Recognition},
+  pages={109272},
+  year={2022},
+  publisher={Elsevier}
+}
+``` 
+
